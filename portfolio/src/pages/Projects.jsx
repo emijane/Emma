@@ -35,7 +35,7 @@ export default function Projects() {
   return (
     <div className="projects border border-white/10 text-gray-300 mt-4 p-6 max-w-[60rem] bg-[rgba(107,114,128,0.1)] md:rounded-lg">
       <div className="projects-header flex items-center gap-2 mb-4">
-        <ToolIcon className="w-5 h-5 text-pink-200 hover:text-pink-300 transition-colors duration-200" />
+        <ToolIcon className="w-6 h-6 text-pink-200 hover:text-pink-300 transition-colors duration-200" />
         <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">Projects</h3>
       </div>
 

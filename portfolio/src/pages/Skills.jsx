@@ -4,7 +4,7 @@ export default function Skills() {
     return (
         <div className="skills border border-white/10 text-gray-300 mt-[1rem] p-[2rem] max-w-[55rem bg-[rgba(107,114,128,0.1)] md:rounded-lg">
           <div className="skills-wrapper flex items-center gap-2">
-            <AboutIcon className="w-5 h-5 text-pink-200 hover:text-pink-300 transition-colors duration-200" />
+            <AboutIcon className="w-6 h-6 text-pink-200 hover:text-pink-300 transition-colors duration-200" />
             <h3 className="text-xl font-bold text-white">Skills</h3>
           </div>
           <div className="skills-list mt-[1.5rem] max-w-[50rem]">
