@@ -1,39 +1,33 @@
 export default function Project({ title, description, tag, author, date, image, avatar }) {
     return (
-      <div className="w-full bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-800 transition-colors duration-300">
-        
+        <div className="w-full mt-[1rem] border border-white/10 rounded-lg shadow-lg hover:shadow-2xl transform-gpu will-change-transform transform hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 cursor-pointer hover:border-pink-300 overflow-hidden">
+
+        {/* Image */}
         <img className="w-full h-50 object-cover" src={image} alt="Article" />
   
+        {/* Content */}
         <div className="p-6">
           <div>
-            <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
+            <span className="text-xs font-medium text-blue-600 uppercase">
               {tag}
             </span>
             <a
               href="#"
-              className="block mt-2 text-lg sm:text-xl font-semibold text-gray-800 dark:text-white transition-colors duration-300 hover:text-gray-600 dark:hover:text-gray-300 hover:underline"
+              className="block mt-2 text-lg sm:text-xl font-semibold text-white hover:underline"
               tabIndex="0"
               role="link"
             >
               {title}
             </a>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-sm text-gray-500">
               {description}
             </p>
           </div>
   
+          {/* Footer */}
           <div className="mt-4">
             <div className="flex flex-wrap items-center gap-2">
-              <img className="h-10 w-10 object-cover rounded-full" src={avatar} alt="Avatar" />
-              <a
-                href="#"
-                className="font-semibold text-gray-700 dark:text-gray-200"
-                tabIndex="0"
-                role="link"
-              >
-                {author}
-              </a>
-              <span className="text-xs text-gray-600 dark:text-gray-300">{date}</span>
+              <span className="text-xs text-gray-500">{date}</span>
             </div>
           </div>
         </div>
