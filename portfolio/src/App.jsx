@@ -5,7 +5,7 @@ import Skills from './pages/Skills';
 
 function App() {
   return (
-    <div className="mx-auto md:max-w-[60rem]">
+    <div className="mx-auto md:max-w-[60rem] mb-[3rem]">
 
       <section id="about">
         <About />
