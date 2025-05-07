@@ -25,7 +25,7 @@ const projectData = [
     title: 'Sudoku',
     description: 'This is a simplified version of the classic Sudoku game developed in Python using PyGame. Created as a final group project for COP3502C, the project implements Sudoku board generation, user interaction, and a graphical interface.',
     tag: 'Team Project',
-    date: 'April 2025',
+    date: 'APRIL 2025',
     image: Sudoku,
     url: 'https://www.youtube.com/watch?v=5idtgCCdxms'
   },
