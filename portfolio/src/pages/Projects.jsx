@@ -2,6 +2,7 @@ import ToolIcon from '../icons/ToolIcon';
 import Project from './Project';
 import AskEric from '../assets/askeric.png';
 import bsg from '../assets/bsg.png';
+import Sudoku from '../assets/sudoku.png';
 
 const projectData = [
   {
@@ -10,6 +11,7 @@ const projectData = [
     tag: 'Chat-bot',
     date: 'SEPTEMBER 2023',
     image: AskEric,
+    url: 'https://github.com/emijane/Ask-Eric'
   },
   {
     title: 'Black Sun Games',
@@ -17,14 +19,15 @@ const projectData = [
     tag: 'Freelance',
     date: 'DECEMBER 2023',
     image: bsg,
-    avatar: 'https://images.unsplash.com/photo-1586287011575-a23134f797f9?auto=format&fit=crop&w=48&q=60',
+    url: 'https://github.com/emijane/BSG',
   },
   {
-    title: 'Ask Eric',
-    description: 'We created "Ask Eric", a chatbot that uses natural language processing (NLP) to provide accurate and truthful answers to your healthcare and health-related questions.',
-    tag: 'Chat-bot',
-    date: 'DECEMBER 2023',
-    image: 'https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&w=500&q=60',
+    title: 'Sudoku',
+    description: 'This is a simplified version of the classic Sudoku game developed in Python using PyGame. Created as a final group project for COP3502C, the project implements Sudoku board generation, user interaction, and a graphical interface.',
+    tag: 'Team Project',
+    date: 'April 2025',
+    image: Sudoku,
+    url: 'https://www.youtube.com/watch?v=5idtgCCdxms'
   },
 ];
 
