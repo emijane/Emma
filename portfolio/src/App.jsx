@@ -2,32 +2,28 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import profilePic from './assets/profile-picture.jpg';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="header flex flex-row items-center gap-7 p-4">
+      <div className="header-right">
+      <img
+        src={profilePic}
+        alt="Profile Picture"
+        className="w-[6rem] sm:w-[7rem] md:w-[7rem] aspect-square rounded-full object-cover outline outline-3 outline-blue-300 p-1"
+      />
+
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="header-left">
+        <h1 className="text-3xl font-bold text-gray-200">Emma DeNunzio</h1>
+        <h3 className="mt-1.5">Computer Science Student @ The University of Florida</h3>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </div>
     </>
   )
 }
