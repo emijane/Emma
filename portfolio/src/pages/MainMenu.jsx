@@ -40,7 +40,7 @@ export default function MainMenu() {
                 <span className="block text-sm text-white/70 truncate">emmadenunz@gmail.com</span>
               </div>
               <ul className="py-2">
-                {["Dashboard", "Settings", "Earnings", "Sign out"].map((text) => (
+                {["Contact Me", "LinkedIn", "GitHub", "Sign out"].map((text) => (
                   <li key={text}>
                     <a
                       href="#"
