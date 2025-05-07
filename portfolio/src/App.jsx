@@ -5,19 +5,21 @@ import Skills from './pages/Skills';
 
 function App() {
   return (
-    <div className="mx-auto md:max-w-[60rem] mb-[3rem]">
+    <div className="wrapper overflow-x-hidden">
+      <div className="md:mx-auto md:max-w-[60rem] md:mb-[3rem]">
 
-      <section id="about">
-        <About />
-      </section>
+        <section id="about">
+          <About />
+        </section>
 
-      <section id="skills">
-        <Skills />
-      </section>
+        <section id="skills">
+          <Skills />
+        </section>
 
-      <section id="projects">
-        <Projects />
-      </section>
+        <section id="projects">
+          <Projects />
+        </section>
+      </div>
     </div>
   );
 }

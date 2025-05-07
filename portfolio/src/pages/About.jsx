@@ -34,7 +34,7 @@ export default function About() {
               <p className="text-gray-500 text-xs md:text-[0.9rem]">@emma</p>
               <HeartIcon className="hidden md:block w-2.5 h-2.5 text-white hover:text-pink-300 self-center" />
               <h3 className="text-gray-300 text-xs md:text-[0.9rem]">
-                <b>Computer Science</b> at The University of Florida / Frontend Developer
+                <b>CS Student</b> @ The University of Florida
               </h3>
             </div>
 
