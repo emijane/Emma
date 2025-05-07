@@ -37,7 +37,7 @@ export default function MainMenu() {
 
           {/* Dropdown */}
           {isDropdownOpen && (
-            <div className="z-50 my-4 text-base list-none absolute right-4 top-16 bg-black/50 md:bg-white/10 divide-y divide-gray-100 rounded-lg shadow">
+            <div className="z-50 my-4 text-base list-none absolute right-4 top-16 bg-black/90 md:bg-white/10 divide-y divide-white/10 rounded-lg shadow">
               <div className="px-4 py-3">
                 <span className="block text-sm text-white/70">Emma DeNunzio</span>
                 <span className="block text-sm text-white/70 truncate">emmadenunz@gmail.com</span>
