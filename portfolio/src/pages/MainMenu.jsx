@@ -34,7 +34,7 @@ export default function MainMenu() {
 
           {/* Dropdown */}
           {isDropdownOpen && (
-            <div className="z-50 my-4 text-base list-none absolute right-4 top-16 bg-black/90  divide-y divide-white/10 border border-white/10 rounded-lg shadow">
+            <div className="z-50 my-4 text-base list-none absolute right-4 top-16 bg-black/90 divide-y divide-white/10 border border-white/10 rounded-lg shadow">
               <div className="px-4 py-3">
                 <span className="block text-sm text-white/70">Emma DeNunzio</span>
                 <span className="block text-sm text-white/70 truncate">emmadenunz@gmail.com</span>
@@ -76,7 +76,7 @@ export default function MainMenu() {
         `}
         id="navbar-user"
         >
-          <ul className="flex flex-col gap-2 md:gap-8 font-medium p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 md:border-0">
+          <ul className="flex flex-col gap-2 md:gap-8 p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 md:border-0">
             {[
               { label: "About", href: "#" },
               { label: "Skills", href: "#" },
