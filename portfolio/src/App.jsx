@@ -3,6 +3,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import MainMenu from './pages/MainMenu';
+import Footer from './pages/Footer';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
 
         <section id="projects">
           <Projects />
+        </section>
+
+        <section id="footer">
+          <Footer />
         </section>
       </div>
     </div>
