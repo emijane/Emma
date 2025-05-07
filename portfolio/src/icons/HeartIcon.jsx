@@ -8,7 +8,7 @@ export default function HeartIcon(props) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <title>About</title>
+        <title>Hi</title>
         <path
           fillRule="evenodd"
           clipRule="evenodd"

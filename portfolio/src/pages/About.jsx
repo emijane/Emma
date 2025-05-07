@@ -1,3 +1,10 @@
+import profilePic from '../assets/profile-picture.jpg';
+import GoogleIcon from '../icons/GoogleIcon';
+import LinkedInIcon from '../icons/LinkedInIcon';
+import GitHubIcon from '../icons/GitHubIcon';
+import HeartIcon from '../icons/HeartIcon';
+import coverPhoto from '../assets/cover-photo.jpg'; 
+
 export default function About() {
     return (
         <div className="header relative flex flex-col items-center pb-[3rem] md:rounded-b-lg md:items-start gap-10 mt-none md:mt-[3rem] bg-[rgba(107,114,128,0.1)]">

@@ -3,3 +3,7 @@
 #root {
   margin: 0 auto;
 }
+
+.skill-tag {
+  @apply text-xs border-2 border-white/30 p-1 rounded-lg;
+}
