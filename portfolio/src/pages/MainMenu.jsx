@@ -71,10 +71,13 @@ export default function MainMenu() {
 
         {/* Nav Items */}
         <div
-          className={`${
-            isMobileMenuOpen ? "flex" : "hidden"
-          } w-full flex-col items-start text-left md:flex md:flex-row md:justify-between md:w-auto md:order-1`}
-          id="navbar-user"
+        className={`
+            w-full flex flex-col items-start text-left origin-top
+            transition-all duration-300 ease-in-out overflow-hidden
+            ${isMobileMenuOpen ? "max-h-96 opacity-100 scale-y-100" : "max-h-0 opacity-0 scale-y-95"}
+            md:flex md:flex-row md:justify-between md:w-auto md:opacity-100 md:scale-y-100 md:max-h-none md:overflow-visible
+        `}
+        id="navbar-user"
         >
           <ul className="flex flex-col gap-2 md:gap-8 font-medium p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 md:border-0">
             {[
