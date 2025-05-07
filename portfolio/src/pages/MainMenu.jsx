@@ -11,29 +11,26 @@ export default function MainMenu() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         {/* Logo */}
-        <a
-          href="https://www.linkedin.com/in/emmadenunzio/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
+        <a className="flex items-center space-x-3 rtl:space-x-reverse">
           <HeartIcon className="w-6 h-6 text-pink-200 hover:text-pink-300 transition-colors duration-200" />
           <span className="self-center text-white text-2xl font-semibold whitespace-nowrap">emi</span>
         </a>
 
         {/* Right side */}
         <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          {/* Profile Button */}
-          <button
-            type="button"
-            className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300"
-            onClick={() => setDropdownOpen(!isDropdownOpen)}
-          >
-            <span className="sr-only">Open user menu</span>
-            <img
-              src={profilePic}
-              alt="Emma DeNunzio - Profile"
-              className="w-[2rem] h-[2rem] rounded-full object-cover"
-            />
-          </button>
+            {/* Profile Button */}
+            <button
+                type="button"
+                className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300"
+                onClick={() => setDropdownOpen(!isDropdownOpen)}
+                >
+                <span className="sr-only">Open user menu</span>
+                <img
+                    src={profilePic}
+                    alt="Emma DeNunzio - Profile"
+                    className="w-[2rem] h-[2rem] rounded-full object-cover border-2 border-white/10 hover:border-white hover:cursor-pointer transition-all duration-200"
+                />
+            </button>
 
           {/* Dropdown */}
           {isDropdownOpen && (
