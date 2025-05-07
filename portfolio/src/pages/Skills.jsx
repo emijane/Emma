@@ -1,3 +1,5 @@
+{/* Skills section */}
+
 import AboutIcon from '../icons/AboutIcon';
 
 export default function Skills() {

@@ -1,3 +1,5 @@
+{/* Individual Project Section */}
+
 export default function Project({ title, description, tag, author, date, image, avatar, url }) {
     return (
       <div className="w-full mt-[1rem] border border-white/10 rounded-lg shadow-lg hover:shadow-2xl transform-gpu will-change-transform transform hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 cursor-pointer hover:border-pink-300 overflow-hidden">

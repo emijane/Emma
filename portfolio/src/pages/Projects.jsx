@@ -1,9 +1,12 @@
+{/* Projects Section */}
+
 import ToolIcon from '../icons/ToolIcon';
 import Project from './Project';
 import AskEric from '../assets/askeric.png';
 import bsg from '../assets/bsg.png';
 import Sudoku from '../assets/sudoku.png';
 
+{/* Dynamic Projects */}
 const projectData = [
   {
     title: 'Ask Eric',
