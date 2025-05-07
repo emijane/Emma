@@ -2,10 +2,14 @@
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
+import MainMenu from './pages/MainMenu';
 
 function App() {
   return (
     <div className="wrapper overflow-x-hidden">
+            <section id="main-menu">
+          <MainMenu />
+        </section>
       <div className="md:mx-auto md:max-w-[60rem] md:mb-[3rem]">
 
         <section id="about">
