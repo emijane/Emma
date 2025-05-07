@@ -17,7 +17,7 @@ export default function About() {
 
           {/* Profile Picture (overlapping) */}
           <div className="absolute top-[33%] md:top-[45%] lg:top-[40%] left-3 md:left-8 z-10 transform -translate-y-1/2">
-            <div className="w-25 md:w-25 lg:w-30 aspect-square bg-white p-[2px] rounded-full shadow-lg">
+            <div className="w-25 md:w-25 lg:w-30 aspect-square border border-2 border-pink-300 shadow-lg hover:shadow-2xl transform-gpu will-change-transform transform hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 hover:border-pink-400 rounded-full shadow-lg">
               <img
                 src={profilePic}
                 alt="Emma DeNunzio - Profile"
@@ -40,9 +40,25 @@ export default function About() {
 
             {/* Social Icons */}
             <div className="social-media flex gap-4 mt-[1rem]">
-              <GoogleIcon className="w-4 h-4 text-pink-200 hover:text-pink-300 transition-colors duration-200 cursor-pointer" />
-              <LinkedInIcon className="w-4 h-4 text-pink-200 hover:text-pink-300 transition-colors duration-200 cursor-pointer" />
-              <GitHubIcon className="w-4 h-4 text-pink-200 hover:text-pink-300 transition-colors duration-200 cursor-pointer" />
+                <a href="mailto:emmadenunz@gmail.com" className="w-4 h-4 text-pink-200 hover:text-pink-300 transform hover:-translate-y-1 transition-transform duration-200 cursor-pointer">
+                    <GoogleIcon />
+                </a>
+                <a
+                href="https://www.linkedin.com/in/emmadenunzio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-4 h-4 text-pink-200 hover:text-pink-300 transform hover:-translate-y-1 transition-transform duration-200 cursor-pointer"
+                >
+                    <LinkedInIcon />
+                </a>
+                <a
+                href="https://github.com/emijane"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-4 h-4 text-pink-200 hover:text-pink-300 transform hover:-translate-y-1 transition-transform duration-200 cursor-pointer"
+                >
+                    <GitHubIcon />
+                </a>
             </div>
           </div>
         </div>
