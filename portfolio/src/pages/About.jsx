@@ -14,10 +14,12 @@ export default function About() {
       transform transition-all duration-300 hover:scale-[1.01] hover:shadow-[0_0_40px_4px_rgba(255,192,203,0.2)] hover:border-pink-300">
 
           {/* Cover Photo */}
-          <div 
-            className="w-full h-48 md:h-64 bg-cover bg-center md:rounded-t-lg" 
-            style={{ backgroundImage: `url(${coverPhoto})` }} 
-          />
+          <div className="w-full md:h-64 h-48 overflow-hidden md:rounded-t-lg">
+            <div 
+              className="w-full h-full bg-cover bg-center blur-xs" 
+              style={{ backgroundImage: `url(${coverPhoto})` }} 
+            />
+          </div>
 
           {/* Profile Picture (overlapping) */}
           <div className="absolute top-[40%] md:top-[47%] left-3 md:left-8 z-10 transform -translate-y-1/2">
