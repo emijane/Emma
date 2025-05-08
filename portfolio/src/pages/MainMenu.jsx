@@ -40,11 +40,18 @@ export default function MainMenu() {
                 <span className="block text-sm text-white/70 truncate">emmadenunz@gmail.com</span>
               </div>
               <ul className="py-2">
-                {["Contact Me", "LinkedIn", "GitHub", "Download Resume"].map((text) => (
+                {[
+                  { text: "LinkedIn", href: "https://www.linkedin.com/in/emmadenunzio" },
+                  { text: "GitHub", href: "https://github.com/emijane" },
+                  { text: "Download Resume", href: "/Emma_DeNunzio_Resume.pdf", download: true },
+                ].map(({ text, href, download }) => (
                   <li key={text}>
                     <a
-                      href="#"
+                      href={href}
                       className="block px-4 py-2 text-sm text-white/70 hover:bg-white/10"
+                      target={href.startsWith("http") ? "_blank" : undefined}
+                      rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      {...(download ? { download: "" } : {})}
                     >
                       {text}
                     </a>
@@ -81,7 +88,7 @@ export default function MainMenu() {
               { label: "About", href: "#about" },
               { label: "Skills", href: "#skills" },
               { label: "Projects", href: "#projects" },
-              { label: "Contact", href: "#contact" },
+              { label: "Contact", href: "mailto:emmadenunz@gmail.com" },
             ].map((item) => (
             <li key={item.label}>
             <a
