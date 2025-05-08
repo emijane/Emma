@@ -7,7 +7,7 @@ export default function MainMenu() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white/2 border border-white/10">
+    <nav className="bg-black/20 border border-white/10">
       <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         {/* Logo */}
@@ -80,16 +80,22 @@ export default function MainMenu() {
             {[
               { label: "About", href: "#about" },
               { label: "Skills", href: "#skills" },
-              { label: "Projects", href: "projects" },
+              { label: "Projects", href: "#projects" },
+              { label: "Contact", href: "#contact" },
             ].map((item) => (
-              <li key={item.label}>
-                <a
-                  href={item.href}
-                  className={`block py-2 px-3 rounded md:p-0 text-white hover:bg-white/10 md:hover:bg-transparent md:hover:text-pink-300`}
-                >
-                  {item.label}
-                </a>
-              </li>
+            <li key={item.label}>
+            <a
+                href={item.href}
+                className={`relative text-md block py-2 px-3 rounded md:p-0 text-white/70 transition-colors duration-300
+                hover:bg-white/10 md:hover:bg-transparent md:hover:text-pink-300
+                focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-offset-2 focus:ring-offset-black
+                after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-pink-300 after:transition-all after:duration-300
+                hover:after:w-full
+                `}
+            >
+                {item.label}
+            </a>
+            </li>
             ))}
           </ul>
         </div>
