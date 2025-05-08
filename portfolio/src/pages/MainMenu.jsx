@@ -95,7 +95,6 @@ export default function MainMenu() {
                 href={item.href}
                 className={`relative text-md block py-2 px-3 rounded md:p-0 text-white/70 transition-colors duration-300
                 hover:bg-white/10 md:hover:bg-transparent md:hover:text-pink-300
-                focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-offset-2 focus:ring-offset-black
                 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-pink-300 after:transition-all after:duration-300
                 hover:after:w-full
                 `}
