@@ -23,7 +23,7 @@ export default function About() {
 
           {/* Profile Picture (overlapping) */}
           <div className="absolute top-[40%] md:top-[47%] left-3 md:left-8 z-10 transform -translate-y-1/2">
-            <div className="w-25 md:w-25 lg:w-30 aspect-square border border-2 border-white shadow-lg hover:shadow-2xl transform-gpu will-change-transform transform hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 hover:border-pink-300 rounded-full shadow-lg">
+            <div className="w-25 md:w-25 lg:w-30 aspect-square border border-2 border-white shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 hover:border-pink-300 rounded-full shadow-lg">
               <img
                 src={profilePic}
                 alt="Emma DeNunzio - Profile"
