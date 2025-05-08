@@ -8,6 +8,7 @@ export default function Skills() {
             <i class="fa-solid fa-toolbox fa-lg text-pink-200 hover:text-pink-300 transition-colors duration-200"></i>
             <h3 className="text-xl font-bold text-white">Skills</h3>
           </div>
+          <p className="text-sm mt-3 max-w-full md:max-w-[45rem] break-words whitespace-normal mr-10 leading-6">Check out my toolbox to see languages I use on a daily basis!</p>
           <div className="skills-list mt-[1.5rem] max-w-[50rem]">
             <li className="flex flex-wrap gap-3">
               {['HTML5', 'CSS3', 'JavaScript (ES6+)', 'TypeScript', 'React.js', 'Tailwind CSS', 'Sass', 'Git/GitHub', 'Node.js', 'Vite', 'Python', 'Webpack', 'gulp.js', 'Figma', 'Adobe Photoshop', 'Adobe After Effects', 'npm'].map((skill) => (

@@ -44,8 +44,11 @@ export default function Projects() {
         <i class="fa-solid fa-diagram-project fa-lg text-pink-200 hover:text-pink-300 transition-colors duration-200"></i>
         <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">Projects</h3>
       </div>
+      <p className="text-sm mt-3 max-w-full md:max-w-[45rem] break-words whitespace-normal mr-10 leading-6">Here are a few examples of projects I have built, check out more on my <a href="https://github.com/emijane" className="underline text-pink-300 hover:font-bold transition-colors" target="_blank" rel="noopener noreferrer">
+  GitHub.
+</a></p>
 
-      <section id="project" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section id="project" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-3">
         {projectData.map((project, index) => (
           <Project key={index} {...project} />
         ))}
