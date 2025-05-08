@@ -8,7 +8,7 @@ export default function MainMenu() {
 
   return (
     <nav className="bg-white/2 border border-white/10">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         {/* Logo */}
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -78,9 +78,9 @@ export default function MainMenu() {
         >
           <ul className="flex flex-col gap-2 md:gap-8 p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 md:border-0">
             {[
-              { label: "About", href: "#" },
-              { label: "Skills", href: "#" },
-              { label: "Projects", href: "#" },
+              { label: "About", href: "#about" },
+              { label: "Skills", href: "#skills" },
+              { label: "Projects", href: "projects" },
             ].map((item) => (
               <li key={item.label}>
                 <a
