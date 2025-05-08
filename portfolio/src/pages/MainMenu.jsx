@@ -21,7 +21,7 @@ export default function MainMenu() {
             {/* Profile Button */}
             <button
                 type="button"
-                className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300"
+                className="flex text-sm bg-gray-800 rounded-full"
                 onClick={() => setDropdownOpen(!isDropdownOpen)}
                 >
                 <span className="sr-only">Open user menu</span>
