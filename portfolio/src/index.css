@@ -10,6 +10,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Apply background gradient to body or any container */
+body {
+  background-image: linear-gradient(to right, #1d1d1d 0%, #000000 100%);
+  background-color: #000000; /* Fallback */
+}
+
+
 html {
   scroll-behavior: smooth;
 }
