@@ -22,7 +22,7 @@ export default function About() {
           </div>
 
           {/* Profile Picture (overlapping) */}
-          <div className="absolute top-[40%] md:top-[47%] left-3 md:left-8 z-10 transform -translate-y-1/2">
+          <div className="absolute top-[32%] md:top-[42%] left-3 md:left-8 z-10 transform -translate-y-1/2">
             <div className="w-25 md:w-25 lg:w-30 aspect-square border border-2 border-white shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 hover:border-pink-300 rounded-full shadow-lg">
               <img
                 src={profilePic}
@@ -43,6 +43,7 @@ export default function About() {
                 <b className="text-pink-300">Computer Science</b> @ The University of Florida
               </h3>
             </div>
+            <p className="text-sm mt-3 max-w-full md:max-w-[45rem] break-words whitespace-normal mr-10 leading-6">Hi, I'm Emma! I am a passionate <b>Frontend Developer</b>, with 3+ years of experience in programming and design. In my freetime I enjoy playing video games, and coding personal projects.</p>
 
             <div className="buttons mt-5 mb-5 flex gap-5">
               <a
