@@ -45,15 +45,24 @@ export default function About() {
             </div>
 
             <div className="buttons mt-5 mb-5 flex gap-5">
-              <button className="resume cursor-pointer text-sm text-white bg-gradient-to-r from-pink-400 to-pink-500 pl-5 pr-5 pt-2 pb-2 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105">
+              <a
+                href="https://github.com/emijane"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resume cursor-pointer text-sm text-white bg-gradient-to-r from-pink-400 to-pink-500 px-5 py-2 rounded-xl shadow-lg transform transition-all duration-200 hover:scale-102 hover:shadow-[0_0_10px_3px_rgba(244,114,182,0.3)] flex items-center"
+              >
                 <i className="fa-brands fa-github mr-2"></i>
-                <a href="https://github.com/emijane" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </button>
-              
-              <button className="resume cursor-pointer text-sm outline outline-1 pl-5 pr-5 pt-2 pb-2 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105">
+                GitHub
+              </a>
+
+              <a
+                href="/Emma_DeNunzio_Resume.pdf"
+                download
+                className="resume cursor-pointer text-sm text-white outline outline-pink-300/50 outline-1 px-5 py-2 rounded-xl shadow-lg transform transition-all duration-200 hover:scale-102 hover:shadow-[0_0_10px_3px_rgba(244,114,182,0.3)] flex items-center"
+              >
                 <i className="fa-solid fa-download mr-2"></i>
-                <a href="/Emma_DeNunzio_Resume.pdf" download>Resume</a>
-              </button>
+                Resume
+              </a>
             </div>
 
             <section className="flex flex-wrap items-center gap-3" id="socials">
