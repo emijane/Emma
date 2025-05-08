@@ -4,13 +4,13 @@ import Socials from './Socials';
 
 import profilePic from '../assets/profile-picture.jpg';
 import HeartIcon from '../icons/HeartIcon';
-import coverPhoto from '../assets/cover-photo.jpg'; 
+import coverPhoto from '../assets/cover.gif'; 
 
 
 
 export default function About() {
     return (
-        <div className="header relative flex flex-col items-center border border-white/10 pb-[3rem] md:rounded-lg md:items-start gap-10 mt-none md:mt-[3rem] bg-[rgba(107,114,128,0.1)] border border-white/10 text-gray-300 bg-[rgba(107,114,128,0.1)] md:rounded-lg
+        <div className="header relative flex flex-col items-center border border-pink-200/30 pb-[3rem] md:rounded-lg md:items-start gap-10 mt-none md:mt-[3rem] bg-[rgba(107,114,128,0.1)] text-gray-300 bg-[rgba(107,114,128,0.1)] md:rounded-lg
       transform transition-all duration-300 hover:scale-[1.01] hover:shadow-[0_0_40px_4px_rgba(255,192,203,0.2)] hover:border-pink-300">
 
           {/* Cover Photo */}
@@ -43,7 +43,7 @@ export default function About() {
             </div>
 
             <div className="buttons mt-5 mb-5 flex gap-5">
-              <button className="resume cursor-pointer text-sm text-white bg-gradient-to-r from-pink-500 to-red-500 pl-5 pr-5 pt-2 pb-2 rounded-xl shadow-lg">
+              <button className="resume cursor-pointer text-sm text-white bg-gradient-to-r from-pink-400 to-pink-500 pl-5 pr-5 pt-2 pb-2 rounded-xl shadow-lg">
                 <i className="fa-brands fa-github mr-2"></i>
                 <a href="https://github.com/emijane" target="_blank" rel="noopener noreferrer">GitHub</a>
               </button>
