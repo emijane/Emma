@@ -11,7 +11,7 @@ export default function Skills() {
           <div className="skills-list mt-[1.5rem] max-w-[50rem]">
             <li className="flex flex-wrap gap-3">
               {['HTML5', 'CSS3', 'JavaScript (ES6+)', 'TypeScript', 'React.js', 'Tailwind CSS', 'Sass', 'Git/GitHub', 'Node.js', 'Vite', 'Python', 'Webpack', 'gulp.js', 'Figma', 'Adobe Photoshop', 'Adobe After Effects', 'npm'].map((skill) => (
-                <a key={skill} className="skill-tag text-xs border border-white/50 rounded-lg shadow-lg hover:shadow-2xl transform-gpu will-change-transform transform hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 hover:border-pink-300 p-1.5 rounded-lg">
+                <a key={skill} className="skill-tag text-xs border border-pink-300/50 rounded-lg shadow-lg hover:shadow-2xl transform-gpu will-change-transform transform hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 hover:border-pink-300 p-1.5 rounded-lg">
                   {skill}
                 </a>
               ))}
