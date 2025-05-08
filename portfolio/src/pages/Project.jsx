@@ -1,4 +1,4 @@
-export default function Project({ title, description, tag, author, date, image, avatar, url }) {
+export default function Project({ title, description, tag, icon, date, image, url }) {
   return (
     <a
       href={url}
@@ -14,6 +14,9 @@ export default function Project({ title, description, tag, author, date, image, 
       {/* Content */}
       <div className="p-6">
         <div>
+          <span className="mr-2 text-pink-300">
+            {icon}
+          </span>
           <span className="text-xs font-medium text-pink-300 uppercase">
             {tag}
           </span>
@@ -23,7 +26,7 @@ export default function Project({ title, description, tag, author, date, image, 
           <p className="mt-2 text-sm text-gray-400">{description}</p>
         </div>
 
-        {/* Footer */}
+        {/* Date */}
         <div className="mt-4">
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-xs text-gray-500">{date}</span>

@@ -13,6 +13,7 @@
 /* Apply background gradient to body or any container */
 body {
   background-color: #000000; /* Fallback */
+  background-image: radial-gradient( circle farthest-corner at 6.3% 21.8%,  rgb(36, 11, 23) 0%, rgb(4, 12, 26) 90% );
 }
 
 html {
