@@ -10,7 +10,7 @@ import coverPhoto from '../assets/cover-photo.jpg';
 
 export default function About() {
     return (
-        <div className="header relative flex flex-col items-center border border-white/10 pb-[3rem] md:rounded-lg md:items-start gap-10 mt-none md:mt-[3rem] bg-[rgba(107,114,128,0.1)] border border-white/10 text-gray-300 mt-[1rem] bg-[rgba(107,114,128,0.1)] md:rounded-lg
+        <div className="header relative flex flex-col items-center border border-white/10 pb-[3rem] md:rounded-lg md:items-start gap-10 mt-none md:mt-[3rem] bg-[rgba(107,114,128,0.1)] border border-white/10 text-gray-300 bg-[rgba(107,114,128,0.1)] md:rounded-lg
       transform transition-all duration-300 hover:scale-[1.01] hover:shadow-[0_0_40px_4px_rgba(255,192,203,0.2)] hover:border-pink-300">
 
           {/* Cover Photo */}
