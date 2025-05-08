@@ -20,7 +20,7 @@ export default function Project({ title, description, tag, author, date, image, 
           <h3 className="block mt-2 text-lg sm:text-xl font-semibold text-white">
             {title}
           </h3>
-          <p className="mt-2 text-sm text-gray-500">{description}</p>
+          <p className="mt-2 text-sm text-gray-400">{description}</p>
         </div>
 
         {/* Footer */}
