@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   color-scheme: light dark;
@@ -14,6 +18,7 @@
 body {
   background-color: #000000; /* Fallback */
   background-image: radial-gradient( circle farthest-corner at 6.3% 21.8%,  rgb(36, 11, 23) 0%, rgb(4, 12, 26) 90% );
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 html {

@@ -5,8 +5,6 @@ import Skills from './pages/Skills';
 import MainMenu from './pages/MainMenu';
 import Footer from './pages/Footer';
 
-
-
 function App() {
   return (
     <div className="wrapper overflow-x-hidden">

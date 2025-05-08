@@ -33,7 +33,7 @@ export default function About() {
 
           {/* Bio Section (with padding to offset the absolute image) */}
           <div className="bio mt-[1rem] ml-[2rem] w-full">
-            <h1 className="text-md md:text-2xl font-bold text-white">Emma DeNunzio</h1>
+            <h1 className="text-md md:text-2xl font-bold text-white ">Emma DeNunzio</h1>
             <div className="bio-wrapper flex flex-col md:flex-row gap-2 mt-[0.5rem]">
               <p className="text-gray-400 text-xs md:text-[0.9rem]">@emi</p>
               <HeartIcon className="hidden md:block w-2.5 h-2.5 text-white hover:text-pink-300 self-center" />
