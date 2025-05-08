@@ -7,7 +7,7 @@ export default function MainMenu() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-black/20 border-b border-b-pink-300/30">
+    <nav>
       <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         {/* Logo */}
