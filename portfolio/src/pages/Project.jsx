@@ -6,7 +6,7 @@ export default function Project({ title, description, tag, icon, date, image, ur
       rel="noopener noreferrer"
       tabIndex="0"
       role="link"
-      className="block w-full mt-[1rem] border border-pink-300/20 rounded-lg shadow-lg hover:shadow-2xl transform-gpu will-change-transform transform hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 cursor-pointer hover:border-pink-300 overflow-hidden"
+      className="block w-full mt-[1rem] border border-pink-300/20 rounded-2xl shadow-lg hover:shadow-2xl transform-gpu will-change-transform transform hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 cursor-pointer hover:border-pink-300 overflow-hidden"
     >
       {/* Image */}
       <img className="w-full h-50 object-cover" src={image} alt={title} />

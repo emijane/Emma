@@ -7,7 +7,7 @@ export default function MainMenu() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav>
+    <nav className="md:bg-black/20 bg-black/60 border border-white/10 shadow-md backdrop-blur-sm fixed top-0 left-0 w-full z-50">
       <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         {/* Logo */}
@@ -21,7 +21,7 @@ export default function MainMenu() {
             {/* Profile Button */}
             <button
                 type="button"
-                className="flex text-sm bg-gray-800 rounded-full"
+                className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300"
                 onClick={() => setDropdownOpen(!isDropdownOpen)}
                 >
                 <span className="sr-only">Open user menu</span>
@@ -40,18 +40,11 @@ export default function MainMenu() {
                 <span className="block text-sm text-white/70 truncate">emmadenunz@gmail.com</span>
               </div>
               <ul className="py-2">
-                {[
-                  { text: "LinkedIn", href: "https://www.linkedin.com/in/emmadenunzio" },
-                  { text: "GitHub", href: "https://github.com/emijane" },
-                  { text: "Download Resume", href: "/Emma_DeNunzio_Resume.pdf", download: true },
-                ].map(({ text, href, download }) => (
+                {["Contact Me", "LinkedIn", "GitHub", "Download Resume"].map((text) => (
                   <li key={text}>
                     <a
-                      href={href}
+                      href="#"
                       className="block px-4 py-2 text-sm text-white/70 hover:bg-white/10"
-                      target={href.startsWith("http") ? "_blank" : undefined}
-                      rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                      {...(download ? { download: "" } : {})}
                     >
                       {text}
                     </a>
@@ -83,27 +76,31 @@ export default function MainMenu() {
         `}
         id="navbar-user"
         >
-          <ul className="flex flex-col gap-2 md:gap-8 p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 md:border-0">
-            {[
-              { label: "About", href: "#about" },
-              { label: "Skills", href: "#skills" },
-              { label: "Projects", href: "#projects" },
-              { label: "Contact", href: "mailto:emmadenunz@gmail.com" },
-            ].map((item) => (
+        <ul className="flex flex-col gap-2 md:gap-8 p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 md:border-0">
+          {[
+            { label: "About", href: "#about" },
+            { label: "Skills", href: "#skills" },
+            { label: "Projects", href: "#projects" },
+          ].map((item) => (
             <li key={item.label}>
-            <a
+              <a
                 href={item.href}
-                className={`relative text-md block py-2 px-3 rounded md:p-0 text-white/70 transition-colors duration-300
-                hover:bg-white/10 md:hover:bg-transparent md:hover:text-pink-300
-                after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-pink-300 after:transition-all after:duration-300
-                hover:after:w-full
-                `}
-            >
+                className={
+                  item.className
+                    ? item.className
+                    : `relative text-md block py-2 px-3 rounded md:p-0 text-white/70 transition-colors duration-300
+                      hover:bg-white/10 md:hover:bg-transparent md:hover:text-pink-300
+                      focus:outline-none focus:ring-2 focus:ring-pink-300 focus:ring-offset-2 focus:ring-offset-black
+                      after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-pink-300 after:transition-all after:duration-300
+                      hover:after:w-full`
+                }
+              >
                 {item.label}
-            </a>
+              </a>
             </li>
-            ))}
-          </ul>
+          ))}
+        </ul>
+
         </div>
       </div>
     </nav>
