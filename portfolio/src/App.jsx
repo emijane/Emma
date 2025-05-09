@@ -8,10 +8,10 @@ import Footer from './pages/Footer';
 function App() {
   return (
     <div className="wrapper overflow-x-hidden">
-            <section id="main-menu">
+        <section id="main-menu">
           <MainMenu />
         </section>
-      <div className="md:mx-auto md:max-w-[60rem] md:mb-[3rem]">
+      <div className="md:mx-auto md:max-w-[65rem] md:mb-[3rem]">
 
         <section id="about">
           <About />

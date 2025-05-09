@@ -2,7 +2,7 @@
 
 export default function Skills() {
     return (
-      <div className="skills border border-pink-200/30 text-gray-300 mt-[1rem] p-[2rem] bg-[rgba(107,114,128,0.1)] md:rounded-lg
+      <div className="skills border border-pink-200/30 text-gray-300 mt-[1rem] p-[3.2rem] bg-[rgba(107,114,128,0.1)] md:rounded-xl
       transform transition-all duration-300 hover:scale-[1.01] hover:shadow-[0_0_40px_4px_rgba(255,192,203,0.2)] hover:border-pink-300">    
           <div className="skills-wrapper flex items-center gap-2">
             <i class="fa-solid fa-toolbox fa-lg text-pink-200 hover:text-pink-300 transition-colors duration-200"></i>
