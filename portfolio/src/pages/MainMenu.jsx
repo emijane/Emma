@@ -21,14 +21,14 @@ export default function MainMenu() {
             {/* Profile Button */}
             <button
                 type="button"
-                className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300"
+                className="flex text-sm bg-pink-300 rounded-full"
                 onClick={() => setDropdownOpen(!isDropdownOpen)}
                 >
                 <span className="sr-only">Open user menu</span>
                 <img
                     src={profilePic}
                     alt="Emma DeNunzio - Profile"
-                    className="w-[2rem] h-[2rem] rounded-full object-cover border-2 border-white/10 hover:border-white hover:cursor-pointer transition-all duration-200"
+                    className="w-[2rem] h-[2rem] rounded-full object-cover border-2 border-white/10 hover:border-pink-400 hover:cursor-pointer transition-all duration-200"
                 />
             </button>
 
